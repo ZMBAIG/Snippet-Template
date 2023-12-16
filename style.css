@@ -97,7 +97,11 @@ input[type="email"] {
   text-align: center;
   padding: 2rem 0rem;
 }
-
+.credit_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .snipper_wrapper .gorgeous_code img {
   display: block;
   padding: 0rem 4rem;
