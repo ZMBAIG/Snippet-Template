@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin: auto;
+  /* background-color: darkmagenta; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0rem;
+  width: 90%;
+  z-index: 1;
+}
+
+header .snipper_navbar form {
+  display: flex;
+  justify-content: center;
+}
+label {
+  display: flex;
+}
+.btn_get_started {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75);
+}
+.btn_get_started:hover {
+  transition: 0.6s;
+  cursor: pointer;
+  background-color: #c17c74;
+  color: black;
+  border: 1px solid grey;
+}
+.btn_get_started span {
+  color: grey;
+}
+input[type="email"] {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  width: 80px;
+}
+.hamburger_menu {
+  display: none;
+}
+/* ==========================Gorgeous Code Snippets=============== */
+
+.snipper_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  margin: auto;
+}
+.gorgeous_code {
+  background-image: url(./Assets/Background.png);
+  background-repeat: no-repeat;
+  margin-top: -10rem;
+  padding-top: 12rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+.snipper_wrapper .gorgeous_code {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.sub_gorgeous_code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub_gorgeous_code h1 {
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+.sub_gorgeous_code > p {
+  width: 45%;
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+.snipper_wrapper .gorgeous_code img {
+  display: block;
+  padding: 0rem 4rem;
+  width: 100%;
+  margin-top: 0;
+}
+/* ======================A fully customizable code snippet editor================= */
+
+.customizable_code {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  width: 90%;
+}
+
+.customizable_code img {
+  display: block;
+  width: 100%;
+}
+
+.customizable_code {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+}
+.sub_customizable_code {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem;
+}
+.sub_customizable_code h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+.sub_customizable_code p {
+  font-size: 1rem;
+  padding: 2rem 0rem;
+  color: grey;
+}
+.sub_customizable_code button {
+  width: 25%;
+}
+/* ===============Footer========================== */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+  width: 90%;
+}
+footer .terms_condition {
+  display: flex;
+  gap: 1.25rem;
+}
+footer .terms_condition a {
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+/* ===============Media Query========================== */
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  header {
+    padding-bottom: 0;
+  }
+
+  h2 {
+    width: 60%;
+  }
+  .snipper_navbar {
+    display: none;
+  }
+  .hamburger_menu {
+    display: block;
+  }
+  .gorgeous_code {
+    gap: 0;
+  }
+  .sub_gorgeous_code h1 {
+    text-align: center;
+  }
+  .sub_gorgeous_code p {
+    display: grid;
+    width: 90%;
+  }
+  .customizable_code {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .customizable_code .btn_get_started {
+    width: 40%;
+  }
+  .sub_customizable_code {
+    padding-right: 0;
+    margin-top: 2rem;
+  }
+  .gorgeous_code > img {
+    display: block;
+    height: 30vh;
+    max-width: 100%;
+  }
+  footer {
+    padding-top: 0;
+    display: grid;
+    width: 90%;
+  }
+}
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+  .snipper_navbar {
+    display: block;
+  }
+  .hamburger_menu {
+    display: none;
+  }
+}
