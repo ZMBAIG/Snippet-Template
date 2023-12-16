@@ -72,6 +72,8 @@ input[type="email"] {
 .gorgeous_code {
   background-image: url(./Assets/Background.png);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   margin-top: -10rem;
   padding-top: 12rem;
   display: flex;
